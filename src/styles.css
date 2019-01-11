@@ -1,0 +1,63 @@
+/*common*/
+.clearfix:after {content:"\200B"; display:block; height:0; clear:both; }
+.clearfix { *zoom:1; }
+.text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+body {
+  font-family: "Microsoft YaHei";
+}
+.page-container {
+  height: calc(100vh - 155px);
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.ml-10 {
+  margin-left: 10px;
+}
+.k-upload{
+  background-color:transparent ;
+  border:none;
+}
+.text--red{
+  color: #f00
+}
+
+/*
+上传 
+*/
+.ivu-upload-list-file>span{
+  display: inline-block;
+  width: 400px;
+  overflow: hidden;  
+  white-space: nowrap;  
+  text-overflow: ellipsis;  
+}
+.ivu-upload-list-file:hover{
+  background: none;
+}
+.ivu-upload-list-file .ivu-upload-list-remove{
+  display: inline-block;
+  float: none;
+  vertical-align: middle;
+  margin-left: 15px;
+  color: #f00;
+  opacity: 1;
+  font-size: 20px;
+  font-weight: 600;
+}
+/* 文字提示 */
+.text-tip{
+  padding-top: 10px;
+  font-size: 14px;
+}

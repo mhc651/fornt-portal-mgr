@@ -1,0 +1,107 @@
+/*
+* @file 列表页详情
+* @author qiu
+*/
+$const_color: #1363a8;
+.head-tab {
+  background: #c3f3fc;
+  // color: #fff;
+  .head-tab_btn {
+    position: relative;
+    display: inline-block;
+    color: inherit;
+    font-size: 14px;
+    padding: 15px 40px;
+    transition: all 0.3s;
+    .ivu-badge {
+      position: absolute;
+      right: 5px;
+      top: 0;
+    }
+    &.active {
+      background: #c3f3cc;
+      // color: #fff;
+    }
+  }
+}
+.ivu-layout-sider-collapsed~.fixed-nav{
+  position: absolute;
+  top:50px;
+  right:0;
+  width: calc(100% - 78px);
+  background: #fff;
+}
+
+// 过滤
+.head-filter{
+  .ivu-row-flex{
+    margin: 15px 0;
+  }
+  .ivu-col{
+    margin-bottom: 15px;
+  }
+}
+.list-inline>*{
+  display: inline-block;
+  //  margin-right: 15px;
+}
+.table{
+  margin-top: 15px;
+  th,td{
+    text-align: center;
+  }
+}
+.ivu-page{
+  margin-top: 15px;
+}
+
+// table
+.tip {
+  line-height: 30px;
+}
+.note, .required {
+  color: #ea5a46;
+}
+
+.strong {
+  color: #333;
+}
+
+.info-table {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  th {
+    margin: 0;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    line-height: 25px;
+    text-align: center;
+  }
+  td {
+    margin: 0;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    width: 300px;
+  }
+  .label {
+    width: 150px;
+    background: #f1f1f1;
+  }
+  .input-sm {
+    height: 36px;
+    padding: 0 0 0 12px;
+  }
+}
+
+.review {
+  cursor: pointer;
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: keep-all;
+  white-space: nowrap;
+  color: #4285f4;
+  margin: 10px;
+}
+
